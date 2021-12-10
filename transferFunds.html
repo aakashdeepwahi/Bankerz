@@ -1,0 +1,88 @@
+
+
+<!doctype html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <div  class="navbar" id="navbar"> <a href="index.html"><i class="fa fa-fw fa-sign-out"></i> Logout </a>  <a> <i class="fa fa-fw fa-user"> </i>  Welcome  Nandini</a>  </div>
+  
+  <div class="sidenav" id="sidenav">
+ 
+  <div class="sidemenuitems">
+ <h2 style='color:white;'>Bankerz</h2>
+  <a  onclick="return changepage(1);"><i class="fa fa-fw fa-home"></i> Dashboard</a><br><br>
+  <a   onclick="return changepage(2);"><i class="fa fa-fw fa-exchange"></i> Transactions</a> <br><br>
+  <a   onclick="return changepage(3);"><i class="fa fa-fw fa-area-chart"></i> Investments</a> <br><br>
+  <a  onclick="return changepage(4);"><i class="fa fa-fw fa-money"></i> Transfer funds</a><br><br>
+  <a   onclick="return changepage(5);"><i class="fa fa-fw fa-envelope"></i> Chat support</a>   <br>
+  
+  
+  </div>
+ 
+  </div>
+  
+  
+  <div class="content" id="content" style='width:100vw;'>
+  
+
+   
+  
+  
+    <div style='float:left:0; top:1%; padding-left:20px;'><center>
+    <h2> Fill Up The Details and <br>
+	Send Amount  Quickly</h2>
+	<p> You Easily send  payments with a<br>
+	great  feature  to convert your money to<br> 
+	corresponding currency.</p>
+  
+  </div>
+
+  <div class='container fundtransfer'>
+    <h4> <Strong> Available Funds :  234$ </strong> </h4>
+  
+  <form onsubmit='done()'>
+   <input type='text' placeholder='Receiver Name' required>
+   <input type='text' placeholder='Account Number' required>
+   <input  type='password' placeholder='Confirm Account Number' required>
+   <input type='email' placeholder='Enter Email'>
+   
+   <input type='number' placeholder='Enter Amount ' value=0 id='amnt'  onfocusout='changecurrency()' required>
+   <span> You can do Currency Exchange here </span>
+   <select onchange='changecurrency()' id='selcur'> 
+   <option value='70'>INR</option>
+   <option value='1.32' >POUND</OPTION>
+   <option value='0.88'>EURO</option>
+   </select>
+   
+   
+   <input type='text' id='result' disabled required>
+  
+    <input type='submit' value='send'>
+  
+  </form>
+   
+  </div>
+  
+ 
+
+   
+   
+ 
+   
+ </div>
+  
+  
+
+  
+  <div class="footer"><br>Created By Dark Coders</div>
+  
+</body>
+<script src="js/main.js"></script>
+</html>

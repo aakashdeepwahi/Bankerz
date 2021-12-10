@@ -1,0 +1,362 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "sidenav navbar navbar"
+    "sidenav content content"
+    "sidenav footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 15% 1fr 30%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+  }  
+
+.navbar {
+  grid-area: navbar;
+  float:right;
+  }
+.footer {
+  grid-area: footer;
+  }
+.content { 
+  grid-area: content;   
+  display: grid;
+  grid-template-areas: 
+    "current savings"
+	"profile additional"  ;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100%;
+  margin: 0;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-image:	url("../images/bg.png");
+  background-repeat: repeat;
+  padding: 10px; 
+
+  }
+  
+.sidenav { 
+  grid-area: sidenav; 
+ background-image:	url("../images/bg.png");
+  background-repeat: repeat;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  }
+
+
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "navbar"
+	  "sidenav"
+      "content"
+      "ads"
+      "footer";
+    grid-template-rows: 80px auto auto 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+ 
+ .sideimage{
+	 
+	 display:none;
+ }
+ 
+
+
+
+ .content { 
+  grid-area: content;   
+  display: grid;
+  grid-template-areas: 
+    "current"
+	"savings"
+	"profile"
+	"additional";
+ 
+  grid-template-columns: 1fr;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+
+   
+  }
+  
+  .card{
+	   width:100%;
+	   padding:0px;
+  }
+ 
+ .ads{
+	  display:none;
+ }
+ 
+ .sidenav{
+	 border-radius:0; 
+	 
+ }
+ 
+ .content{
+	 	 border-radius:0; 
+ }
+
+ 
+ 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 95%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px;
+  border-radius:10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 16px;
+  background-color:white;padding:25px;
+  width:300px;
+  opacity:0.9;
+  border-radius:20px;
+}
+
+
+
+.sidemenuitems a{
+	color:#fdfdff;
+	font-size:2.8vh;
+    text-decoration: none;
+    margin-top:20vh;
+ 
+}
+
+.navbar a{
+	color:black;
+	font-size:18px;
+    text-decoration: none;
+    margin-left:auto;
+	margin-top:20px;
+	margin-right:20px;
+	float:right;
+	
+ 
+}
+
+
+
+.sidemenuitems a:hover {
+  color: gold;
+
+
+}
+
+
+
+.msgtxt{
+	
+	height:40px;
+	border-radius:20px;
+	padding-left:10px;
+	width:200px;
+	border-width:1.5px;
+	
+}
+
+
+.msgbtn{
+	
+	background-color:#434afa;
+	color:white;
+	border-radius:20px;
+	height:50px;
+	width:50px;
+	margin-top:20px;
+	
+}
+
+
+.chatscreen{
+	
+	width:500px;
+	
+	
+	
+	
+}
+
+.msgbubble{
+	
+	background-color:#434afa;
+	color:white;
+	border-radius:20px;
+	height:30px;
+	width:250px;
+	padding:10px;
+	opacity: 1;
+    
+	
+}
+
+
+.msgbubblesend{
+	
+	background-color:#434afa;
+	color:white;
+	border-radius:20px;
+	height:30px;
+	width:250px;
+	padding:10px;
+	opacity: 1;
+    animation: flyup 1s linear;
+	
+}
+.avatarimg {
+	
+	height:70px;
+	width:70px;
+	
+  border-radius: 50%;
+
+}
+
+
+
+@keyframes flyup {
+    0% {
+        transform: translate(0px, 80px);
+        opacity: 0
+    }
+    50% {
+       
+        animation-timing-function: ease-in-out
+    }
+}
+
+
+.sideimage{
+	
+	float:right;
+	margin-right:-200px;
+	height:500px;
+	width:500px;
+	
+	
+	
+	
+	
+}
+
+
+.containercard {
+  height:50px;
+  width:75vw;
+  display:flex;
+
+  border-radius:10px;
+  background:white;
+ flex-wrap :nowrap;
+ padding-left:15px;
+ opacity:0.8;
+ margin:2px;
+ border-style:solid;
+ border-width:1px;
+ 
+
+}
+
+.transaction{
+	
+	
+	width:80vw;
+	border-style:solid;
+	display:block;
+	padding:20px; 
+	overflow-y:scroll;
+	background:none;
+	border-style:none;
+	
+	overflow-x:hidden;
+	
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="datetime"],
+ input[type="email"],
+ input[type="number"],
+ input[type="search"],
+ input[type="time"],
+ input[type="url"], input[type="password"],
+ textarea,
+ select 
+{
+	
+	width: 100%;
+    border-radius:10px;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 5px;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+
+.fundtransfer {
+
+  
+	background:white;
+	color:black;
+
+	margin-left:20px;
+	
+}
+
+
+
+ input[type="submit"],button{
+	 
+	 width: 100%;
+	 height:40px;
+	 color:white;
+    border-radius:10px;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 5px;
+
+	font: 95% Arial, Helvetica, sans-serif;
+	background-color:#434afa;
+	 
+ }
+ 
+ .success{
+	 
+	 background:lightgreen;
+	 
+ }
+ 
+ 
+ 
+ .error{
+	 
+	 background:red;
+	 
+ }
+ 
+ 
+ .pending{
+	 
+	 background:orange;
+	 
+ }

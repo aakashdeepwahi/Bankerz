@@ -1,0 +1,80 @@
+<!doctype html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <div  class="navbar" id="navbar"> <a href="index.html"><i class="fa fa-fw fa-sign-out"></i> Logout </a>  <a> <i class="fa fa-fw fa-user"> </i> Welcome  Nandini </a>  </div>
+  
+  <div class="sidenav" id="sidenav">
+ 
+  <div class="sidemenuitems">
+ <h2 style='color:white;'>Bankerz</h2>
+  <a  onclick="return changepage(1);"><i class="fa fa-fw fa-home"></i> Dashboard</a><br><br>
+  <a   onclick="return changepage(2);"><i class="fa fa-fw fa-exchange"></i> Transactions</a> <br><br>
+  <a   onclick="return changepage(3);"><i class="fa fa-fw fa-area-chart"></i> Investments</a> <br><br>
+  <a  onclick="return changepage(4);"><i class="fa fa-fw fa-money"></i> Transfer funds</a><br><br>
+  <a   onclick="return changepage(5);"><i class="fa fa-fw fa-envelope"></i> Chat support</a>   <br>
+  
+  
+  </div>
+ 
+  </div>
+  
+  
+  <div class="content" id="content">
+ 
+  
+  <div class="card" id="module" style="background-color:#FF3EA5FF;">
+    
+     <div class="container">
+    <h4><b>Current Account</b></h4> 
+    <p>Balance :3456$</p> 
+  </div>
+   </div>
+ 
+   <div class="card" id="module" style="background-color:#EDFF00FF;background-image:url('images/card.jpg');background-position:50% 60%;">
+
+  <div class="container">
+    <h4 ><b>Savings Account</b></h4> 
+      <p>Balance :1002$</p>
+  </div>
+   </div>
+ 
+ 
+ 
+   <div class="card"  id="module" style="background-color:white;background-image:url('images/people.webp');background-position:50% 50%;">
+
+  <div class="container">
+    <h4><b>Payments and UPI</b></h4> 
+    
+  </div>
+   </div>
+ 
+ 
+ 
+   <div class="card"  id="module" style="background-color:#434afa">
+ 
+  <div class="container">
+    <h4><b>Account Settings</b></h4> 
+    
+   </div>
+   </div>
+ 
+
+  
+  </div>
+  
+  
+
+  
+  <div class="footer"><br>Created By Dark Coders</div>
+  
+</body>
+<script src="js/main.js"></script>
+</html>

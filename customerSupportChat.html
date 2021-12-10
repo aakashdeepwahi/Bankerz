@@ -1,0 +1,73 @@
+
+
+<!doctype html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <div  class="navbar" id="navbar"> <a href="index.html"><i class="fa fa-fw fa-sign-out"></i> Logout </a>  <a> <i class="fa fa-fw fa-user"> </i> Welcome  Nandini </a>  </div>
+  
+  <div class="sidenav" id="sidenav">
+ 
+  <div class="sidemenuitems">
+    <h2 style='color:white;'>Bankerz</h2>
+  <a  onclick="return changepage(1);"><i class="fa fa-fw fa-home"></i> Dashboard</a><br><br>
+  <a   onclick="return changepage(2);"><i class="fa fa-fw fa-exchange"></i> Transactions</a> <br><br>
+  <a   onclick="return changepage(3);"><i class="fa fa-fw fa-area-chart"></i> Investments</a> <br><br>
+  <a  onclick="return changepage(4);"><i class="fa fa-fw fa-money"></i> Transfer funds</a><br><br>
+  <a   onclick="return changepage(5);"><i class="fa fa-fw fa-envelope"></i> Chat support</a>   <br>
+  
+  
+  </div>
+ 
+  </div>
+  
+
+<div class="content" id="content" style='background:white;border-color:black;margin-left:10px;'>
+ 
+
+
+ 
+     <div>
+	 
+	
+	 <div style='height:300px;background:white;'>
+	 <span> <img class='avatarimg' src='images/avatar.jpg' align='center'><strong>Customer Support 24x7 </strong><span> |feel free to contact</span><br><br>	 </span>  
+	
+	   <div id ='chatid' class="msgbubble" style='background-color:#434afa;color:white;'>
+  <span>Hello. How are you today?.</span><span ></span>
+  </div>
+  
+  
+   <br><br><br>
+<div id ='chatid' class="msgbubblesend" style='background-color:#fbb005;color:black;float:right'>
+  <span>hi, I want to know status of my application ED3453</span><span class="time-right"></span>
+  </div>
+
+	 </div>
+
+      <table style='width:100%;'><tr> <td><input type='text' class='msgtxt' placeholder='write something'> </td><td>&nbsp;&nbsp;</td><td><i class="fa fa-send" style="font-size:40px;color:#434afa"></i> </td></tr></table>
+  
+	 </div>
+	 <img src='images/customer.jpg' class='sideimage'>
+	 
+  </div>
+	
+	
+
+
+
+  
+
+  
+  <div class="footer"><br>Created By Dark Coders</div>
+  
+</body>
+<script src="js/main.js"></script>
+</html>
